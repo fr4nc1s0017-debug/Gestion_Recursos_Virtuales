@@ -41,4 +41,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+    // Cargar imágenes desde URLs
+    implementation("com.github.bumptech.glide:glide:5.0.9")
 }

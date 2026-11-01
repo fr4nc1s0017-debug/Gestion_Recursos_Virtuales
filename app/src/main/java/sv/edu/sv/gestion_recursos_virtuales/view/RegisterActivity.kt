@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.coroutines.launch
-import sv.edu.udb.aprendeapp.R
+import sv.edu.sv.gestion_recursos_virtuales.R
 import sv.edu.udb.aprendeapp.controller.AuthController
 import sv.edu.udb.aprendeapp.controller.ValidationException
 

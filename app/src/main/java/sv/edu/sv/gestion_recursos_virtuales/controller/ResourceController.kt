@@ -1,7 +1,7 @@
 package sv.edu.udb.aprendeapp.controller
 
 import org.json.JSONObject
-import sv.edu.udb.aprendeapp.R
+import sv.edu.sv.gestion_recursos_virtuales.R
 import sv.edu.udb.aprendeapp.model.Recurso
 import sv.edu.udb.aprendeapp.network.ApiClient
 import sv.edu.udb.aprendeapp.util.Validators

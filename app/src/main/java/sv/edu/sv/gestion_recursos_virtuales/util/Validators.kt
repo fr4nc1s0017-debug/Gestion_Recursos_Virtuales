@@ -1,7 +1,7 @@
 package sv.edu.udb.aprendeapp.util
 
 import java.net.URI
-import sv.edu.udb.aprendeapp.R
+import sv.edu.sv.gestion_recursos_virtuales.R
 
 /** Devolver IDs de strings permite centralizar TODOS los mensajes de validación. */
 object Validators {
