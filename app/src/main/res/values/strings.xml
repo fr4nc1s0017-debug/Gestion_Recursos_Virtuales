@@ -1,3 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Gestion_Recursos_Virtuales</string>
+    <string name="app_name">AprendeApp</string>
+    <string name="welcome">Biblioteca de aprendizaje</string>
+    <string name="subtitle_login">Encuentra y comparte recursos de Ingeniería de Sistemas</string>
+    <string name="label_email">Correo electrónico</string>
+    <string name="label_password">Contraseña</string>
+    <string name="label_confirm_password">Confirmar contraseña</string>
+    <string name="label_name">Nombre completo</string>
+    <string name="label_role">Tipo de cuenta</string>
+    <string name="role_student">Estudiante</string>
+    <string name="role_teacher">Docente</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="register">Crear cuenta</string>
+    <string name="new_account">¿No tienes cuenta? Regístrate</string>
+    <string name="existing_account">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="register_title">Registro de usuario</string>
+    <string name="password_help">Mínimo 12 caracteres, mayúscula, minúscula, número y símbolo (!@#$%%^&amp;*)</string>
+    <string name="error_campo_obligatorio">Completa todos los campos obligatorios.</string>
+    <string name="error_nombre_obligatorio">Escribe tu nombre completo.</string>
+    <string name="error_email_obligatorio">Ingresa un correo electrónico.</string>
+    <string name="error_email_invalido">El correo electrónico no tiene un formato válido.</string>
+    <string name="error_email_duplicado">Ese correo ya está registrado.</string>
+    <string name="error_password_requerida">Ingresa tu contraseña.</string>
+    <string name="error_password_longitud">La contraseña debe tener al menos 12 caracteres.</string>
+    <string name="error_password_mayuscula">La contraseña debe incluir una letra mayúscula.</string>
+    <string name="error_password_minuscula">La contraseña debe incluir una letra minúscula.</string>
+    <string name="error_password_numero">La contraseña debe incluir un número.</string>
+    <string name="error_password_simbolo">La contraseña debe incluir un símbolo: ! @ # $ %% ^ &amp; *</string>
+    <string name="error_password_no_coincide">Las contraseñas no coinciden.</string>
+    <string name="error_rol_invalido">Selecciona un rol válido.</string>
+    <string name="error_credenciales">Correo o contraseña incorrectos.</string>
+    <string name="error_red">No se pudo conectar. Revisa la conexión y la URL de MockAPI.</string>
+    <string name="error_url_invalida">El enlace debe ser una URL http o https válida.</string>
+    <string name="error_titulo_corto">El título debe contener al menos 3 caracteres.</string>
+    <string name="error_descripcion_corta">La descripción debe contener al menos 10 caracteres.</string>
+    <string name="error_tipo_invalido">Selecciona un tipo de recurso válido.</string>
+    <string name="error_rating_invalido">La calificación debe ser de 1 a 5 estrellas.</string>
+    <string name="error_open_url">No hay una aplicación para abrir este enlace.</string>
+    <string name="saved_registration">Cuenta creada. Ya puedes iniciar sesión.</string>
+    <string name="loading">Cargando…</string>
+    <string name="list_title">Recursos educativos</string>
+    <string name="greeting">Hola, %1$s</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="refresh">Actualizar lista</string>
+    <string name="search_hint">Buscar por ID, título o tipo</string>
+    <string name="filter_label">Filtrar por tipo</string>
+    <string name="sort_label">Ordenar por</string>
+    <string name="favorites_only">Ver solo favoritos</string>
+    <string name="show_all">Ver todos los recursos</string>
+    <string name="empty_resources">No hay recursos para mostrar.</string>
+    <string name="create_resource">Agregar recurso</string>
+    <string name="edit_resource">Editar recurso</string>
+    <string name="label_title">Título</string>
+    <string name="label_description">Descripción detallada</string>
+    <string name="label_type">Tipo de recurso</string>
+    <string name="label_link">Enlace del recurso (https://…)</string>
+    <string name="label_image">URL de la imagen (opcional)</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="saved_resource">Recurso guardado correctamente.</string>
+    <string name="deleted_resource">Recurso eliminado correctamente.</string>
+    <string name="delete_resource">Eliminar</string>
+    <string name="confirm_delete_title">Eliminar recurso</string>
+    <string name="confirm_delete_text">¿Seguro que quieres eliminar «%1$s»? Esta acción no se puede deshacer.</string>
+    <string name="open_link">Abrir enlace</string>
+    <string name="favorite_add">Añadir a favoritos</string>
+    <string name="favorite_remove">Quitar de favoritos</string>
+    <string name="favorite_added">Añadido a favoritos.</string>
+    <string name="favorite_removed">Eliminado de favoritos.</string>
+    <string name="rate">Calificar</string>
+    <string name="rating_title">Califica este recurso</string>
+    <string name="rating_saved">Calificación guardada en la API.</string>
+    <string name="rating_average">Promedio: %1$.1f / 5</string>
+    <string name="rating_not_available">Sin calificaciones</string>
+    <string name="resource_type">Tipo: %1$s</string>
+    <string name="content_resource_image">Imagen ilustrativa del recurso</string>
+    <string name="sort_title">Título (A–Z)</string>
+    <string name="sort_type">Tipo (A–Z)</string>
+    <string name="filter_all">Todos los tipos</string>
+    <string name="type_book">Libro</string>
+    <string name="type_video">Video</string>
+    <string name="type_article">Artículo</string>
+    <string name="type_tutorial">Tutorial</string>
+    <string name="session_expired">Inicia sesión para continuar.</string>
+    <string name="warning_demo">Demostración educativa: los roles no están protegidos en el servidor de MockAPI.</string>
+    <string-array name="role_labels">
+        <item>@string/role_student</item>
+        <item>@string/role_teacher</item>
+    </string-array>
+    <string-array name="filter_labels">
+        <item>@string/filter_all</item>
+        <item>@string/type_book</item>
+        <item>@string/type_video</item>
+        <item>@string/type_article</item>
+        <item>@string/type_tutorial</item>
+    </string-array>
+    <string-array name="type_labels">
+        <item>@string/type_book</item>
+        <item>@string/type_video</item>
+        <item>@string/type_article</item>
+        <item>@string/type_tutorial</item>
+    </string-array>
+    <string-array name="sort_labels">
+        <item>@string/sort_title</item>
+        <item>@string/sort_type</item>
+    </string-array>
 </resources>
