@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "623807304360",
+    "project_id": "appmvc-eec3d",
+    "storage_bucket": "appmvc-eec3d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623807304360:android:f673950c5e6a46e5a0e89d",
+        "android_client_info": {
+          "package_name": "sv.edu.sv.gestion_recursos_virtuales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623807304360-glcfcdsfuf4l6ttbj8jf1i9amvo6jut0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPRNneR4ugHA98M7ZKZCM7Rwt9cbZIW7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623807304360-glcfcdsfuf4l6ttbj8jf1i9amvo6jut0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
