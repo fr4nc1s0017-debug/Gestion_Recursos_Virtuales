@@ -12,6 +12,7 @@
     <string name="role_teacher">Docente</string>
     <string name="login">Iniciar sesión</string>
     <string name="register">Crear cuenta</string>
+    <string name="error_perfil_conflicto">Ya existe un perfil asociado a este correo.</string>
     <string name="new_account">¿No tienes cuenta? Regístrate</string>
     <string name="existing_account">¿Ya tienes cuenta? Inicia sesión</string>
     <string name="register_title">Registro de usuario</string>
@@ -20,7 +21,6 @@
     <string name="error_nombre_obligatorio">Escribe tu nombre completo.</string>
     <string name="error_email_obligatorio">Ingresa un correo electrónico.</string>
     <string name="error_email_invalido">El correo electrónico no tiene un formato válido.</string>
-    <string name="error_email_duplicado">Ese correo ya está registrado.</string>
     <string name="error_password_requerida">Ingresa tu contraseña.</string>
     <string name="error_password_longitud">La contraseña debe tener al menos 12 caracteres.</string>
     <string name="error_password_mayuscula">La contraseña debe incluir una letra mayúscula.</string>
@@ -35,9 +35,11 @@
     <string name="error_titulo_corto">El título debe contener al menos 3 caracteres.</string>
     <string name="error_descripcion_corta">La descripción debe contener al menos 10 caracteres.</string>
     <string name="error_tipo_invalido">Selecciona un tipo de recurso válido.</string>
+    <string name="saved_registration">Registro completado correctamente.</string>
+    <string name="error_email_duplicado">Este correo electrónico ya está registrado.</string>
+    <string name="error_registro_fallido">No se pudo completar el registro. Inténtalo nuevamente.</string>
     <string name="error_rating_invalido">La calificación debe ser de 1 a 5 estrellas.</string>
     <string name="error_open_url">No hay una aplicación para abrir este enlace.</string>
-    <string name="saved_registration">Cuenta creada. Ya puedes iniciar sesión.</string>
     <string name="loading">Cargando…</string>
     <string name="list_title">Recursos educativos</string>
     <string name="greeting">Hola, %1$s</string>

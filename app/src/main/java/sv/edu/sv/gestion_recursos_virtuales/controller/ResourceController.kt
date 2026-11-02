@@ -7,8 +7,8 @@ import sv.edu.udb.aprendeapp.network.ApiClient
 import sv.edu.udb.aprendeapp.util.Validators
 
 class ResourceController {
-    suspend fun listar(): List<Recurso> = ApiClient.service.listarRecursos()
-    suspend fun obtener(id: String): Recurso = ApiClient.service.obtenerRecurso(id)
+    suspend fun listar(): List<Recurso> = ApiClient.apiService.listarRecursos()
+    suspend fun obtener(id: String): Recurso = ApiClient.apiService.obtenerRecurso(id)
 
     suspend fun guardar(id: String?, titulo: String, descripcion: String,
                         tipo: String, enlace: String, imagen: String): Recurso {
@@ -18,11 +18,11 @@ class ResourceController {
         val recurso = Recurso(id = id, titulo = titulo.trim(), descripcion = descripcion.trim(),
             tipo = tipo, enlace = enlace.trim(), imagen = imagen.trim(),
             calificaciones = original?.calificaciones ?: "{}")
-        return if (id == null) ApiClient.service.crearRecurso(recurso)
-               else ApiClient.service.actualizarRecurso(id, recurso)
+        return if (id == null) ApiClient.apiService.crearRecurso(recurso)
+               else ApiClient.apiService.actualizarRecurso(id, recurso)
     }
 
-    suspend fun eliminar(id: String) { ApiClient.service.eliminarRecurso(id) }
+    suspend fun eliminar(id: String) { ApiClient.apiService.eliminarRecurso(id) }
 
     suspend fun calificar(id: String, usuarioId: String, estrellas: Int): Recurso {
         if (estrellas !in 1..5) throw ValidationException(R.string.error_rating_invalido)
@@ -30,7 +30,7 @@ class ResourceController {
         val actual = obtener(id)
         val votos = try { JSONObject(actual.calificaciones) } catch (_: Exception) { JSONObject() }
         votos.put(usuarioId, estrellas)
-        return ApiClient.service.actualizarRecurso(id, actual.copy(calificaciones = votos.toString()))
+        return ApiClient.apiService.actualizarRecurso(id, actual.copy(calificaciones = votos.toString()))
     }
 
     fun promedio(recurso: Recurso): Double {
