@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="false"
         android:usesCleartextTraffic="false"
         android:label="@string/app_name"
         android:theme="@style/Theme.AprendeApp">
-        <activity android:name=".view.EditorActivity" android:exported="false" />
-        <activity android:name=".view.RegisterActivity" android:exported="false" />
-        <activity android:name=".view.MainActivity" android:exported="false" />
-        <activity android:name=".view.LoginActivity" android:exported="true">
+
+        <activity
+            android:name="sv.edu.udb.aprendeapp.view.EditorActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="sv.edu.udb.aprendeapp.view.RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="sv.edu.udb.aprendeapp.view.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="sv.edu.udb.aprendeapp.view.LoginActivity"
+            android:exported="true">
+
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
     </application>
+
 </manifest>
